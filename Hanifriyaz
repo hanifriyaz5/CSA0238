@@ -1,0 +1,345 @@
+
+
+1. Add Two Integers
+
+Problem: Add two integers.
+
+IPO:
+
+Input: Two integers (a, b)
+
+Process: sum = a + b
+
+Output: Print sum
+
+
+#include <stdio.h>
+
+int main() 
+{
+    int a, b, sum;
+    scanf("%d %d", &a, &b);
+    sum = a + b;
+    printf("%d", sum);
+    return 0;
+}
+
+Output:
+
+Input:
+5 3
+
+Output:
+8
+
+
+2. Swap Two Numbers Using Temporary Variable
+
+Problem: Swap values of two variables using a temporary variable.
+
+IPO:
+
+Input: a, b
+
+Process: Use temp variable to swap
+
+Output: Swapped values
+
+
+#include <stdio.h>
+
+int main() 
+{
+
+    int a, b, t;
+    scanf("%d %d", &a, &b);
+    t = a;
+    a = b;
+    b = t;
+    printf("%d %d", a, b);
+    return 0;
+}
+
+Output:
+
+Input:
+4 9
+
+Output:
+9 4
+
+
+---
+
+3. Swap Without Temporary Variable
+
+Problem: Swap two numbers without using a third variable.
+
+IPO:
+
+Input: a, b
+
+Process: a = a + b; b = a - b; a = a - b;
+
+Output: Swapped values
+
+
+#include <stdio.h>
+
+int main() 
+{
+    int a, b;
+    scanf("%d %d", &a, &b);
+    a = a + b;
+    b = a - b;
+    a = a - b;
+    printf("%d %d", a, b);
+    return 0;
+}
+
+Output:
+
+Input:
+7 2
+
+Output:
+2 7
+
+4. ASCII Value of Character
+
+Problem: Find ASCII value of a character.
+
+IPO:
+
+Input: A character
+
+Process: Convert to ASCII
+
+Output: ASCII value
+
+
+#include <stdio.h>
+
+int main() 
+{
+    char ch;
+    scanf(" %c", &ch);
+    printf("%d", ch);
+    return 0;
+}
+
+Output:
+
+Input:
+A
+
+Output:
+65
+
+
+---
+
+5. Area and Perimeter of Rectangle
+
+Problem: Find area and perimeter.
+
+IPO:
+
+Input: length and breadth
+
+Process: area = l * b; peri = 2 * (l + b)
+
+Output: Print area and perimeter
+
+
+#include <stdio.h>
+
+int main() 
+{
+    int l, b, area, peri;
+    scanf("%d %d", &l, &b);
+    area = l * b;
+    peri = 2 * (l + b);
+    printf("%d %d", area, peri);
+    return 0;
+}
+
+Output:
+
+Input:
+5 3
+
+Output:
+15 16
+
+
+
+6. Simple Interest
+
+Problem: Calculate simple interest.
+
+IPO:
+
+Input: p, r, t
+
+Process: SI = (p * r * t) / 100
+
+Output: Simple interest
+
+
+#include <stdio.h>
+
+int main() 
+{
+    float p, r, t, si;
+    scanf("%f %f %f", &p, &r, &t);
+    si = (p * r * t) / 100;
+    printf("%.2f", si);
+    return 0;
+}
+
+Output:
+
+Input:
+1000 5 2
+
+Output:
+100.00
+
+7. Celsius to Fahrenheit
+
+Problem: Convert Celsius to Fahrenheit.
+
+IPO:
+
+Input: Celsius
+
+Process: F = (C × 9/5) + 32
+
+Output: Fahrenheit
+
+
+#include <stdio.h>
+
+int main() 
+{
+    float c, f;
+    scanf("%f", &c);
+    f = (c * 9 / 5) + 32;
+    printf("%.2f", f);
+    return 0;
+}
+
+Output:
+
+Input:
+25
+
+Output:
+77.00
+
+
+
+8. Quotient and Remainder
+
+Problem: Find quotient and remainder.
+
+IPO:
+
+Input: dividend, divisor
+
+Process: q = a / b, r = a % b
+
+Output: quotient and remainder
+
+
+#include <stdio.h>
+
+int main() 
+{
+    int a, b, q, r;
+    scanf("%d %d", &a, &b);
+    q = a / b;
+    r = a % b;
+    printf("%d %d", q, r);
+    return 0;
+}
+
+Output:
+
+Input:
+10 3
+
+Output:
+3 1
+
+9. Check Even or Odd
+
+Problem: Check if number is even or odd.
+
+IPO:
+
+Input: n
+
+Process: if n % 2 == 0 then even else odd
+
+Output: Even or Odd
+
+
+#include <stdio.h>
+
+int main() 
+{
+    int n;
+    scanf("%d", &n);
+    if (n % 2 == 0)
+        printf("Even");
+    else
+        printf("Odd");
+    return 0;
+}
+
+Output:
+
+Input:
+11
+
+Output:
+Odd
+
+
+
+10. Square and Cube of Number
+
+Problem: Find square and cube of a number.
+
+IPO:
+
+Input: n
+
+Process: square = n * n, cube = n * n * n
+
+Output: square and cube
+
+
+#include <stdio.h>
+
+int main() 
+{
+    int n, sq, cube;
+    scanf("%d", &n);
+    sq = n * n;
+    cube = n * n * n;
+    printf("%d %d", sq, cube);
+    return 0;
+}
+
+Output:
+
+Input:
+4
+
+Output:
+16 64
+
+
